@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Habit from './habit';
 import HabitAddForm from './habitAddForm';
+import Button from '@mui/material/Button';
 
 class Habits extends Component {
     handleIncrement = (habit) => {
@@ -28,7 +29,8 @@ class Habits extends Component {
                         )
                     }
                 </ul>
-                <button className="habits-reset" onClick={this.props.onReset}>Reset All</button>
+                {/* <button className="habits-reset" onClick={this.props.onReset}>Reset All</button> */}
+                <Button sx={{mt:1}} onClick={this.props.onReset} variant="contained">Reset All</Button>
             </>            
         );
     }

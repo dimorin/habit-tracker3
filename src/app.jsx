@@ -2,13 +2,14 @@ import './app.css';
 import React, { Component } from 'react';
 import Habits from './components/habits';
 import Navbar from './components/navbar';
-
+import Container from '@mui/material/Container';
+import { grey } from '@mui/material/colors';
 class App extends Component {
   state = {
     habits:[
-        {id:'1', name:'reading', count:0},
-        {id:'2', name:'cooking', count:0},
-        {id:'3',name:'coding', count:0}
+        {id:'1', name:'Reading five pages of the Bible.', count:0},
+        {id:'2', name:'Take 1000mg of vitamin C.', count:0},
+        {id:'3', name:'Stretching for 10 minutes.', count:0}
     ]
   }
   handleIncrement = (habit) => {
@@ -57,7 +58,9 @@ class App extends Component {
     return (
       <>
         <Navbar totalCount={this.state.habits.filter(item => item.count > 0).length} />
-        <Habits habits={this.state.habits} onReset={this.handleReset} onAdd={this.handleAdd} onIncrement={this.handleIncrement} onDecrement={this.handleDecrement} onDelete={this.handleDelete}></Habits>
+        <Container fixed sx={{mt:3, mb:3}}>
+          <Habits habits={this.state.habits} onReset={this.handleReset} onAdd={this.handleAdd} onIncrement={this.handleIncrement} onDecrement={this.handleDecrement} onDelete={this.handleDelete}></Habits>
+        </Container>        
       </>
     );
   }

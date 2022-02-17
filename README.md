@@ -79,3 +79,9 @@ npm install --save @fortawesome/fontawesome-free
 // index.js
 import '@fortawesome/fontawesome-free/js/all.js';
 ```
+### install mui
+```bash
+npm install @mui/material @emotion/react @emotion/styled
+npm install @mui/icons-material
+```
+[https://mui.com/](https://mui.com/)
