@@ -68,3 +68,13 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+### install fontawesome
+```bash
+npm install --save @fortawesome/fontawesome-free
+```
+[https://fontawesome.com/docs/web/setup/packages](https://fontawesome.com/docs/web/setup/packages)
+```js
+// index.js
+import '@fortawesome/fontawesome-free/js/all.js';
+```
