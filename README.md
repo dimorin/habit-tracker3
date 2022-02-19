@@ -1,3 +1,10 @@
+# habit-tracker3
+![screenshot](./screenshot.png)
+<br>
+[site](https://dimorin.github.io/habit-tracker3/)
+<br>
+[how to deployment](https://create-react-app.dev/docs/deployment#github-pages)
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -85,4 +92,3 @@ npm install @mui/material @emotion/react @emotion/styled
 npm install @mui/icons-material
 ```
 [https://mui.com/](https://mui.com/)
-![screenshot](./screenshot.png);
